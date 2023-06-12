@@ -1,0 +1,7 @@
+services:
+  redis-server:
+    image: 'redis:7.2-rc2-alpine'
+  node-app:
+    build: .
+    ports:
+      - "4001:8081"  
